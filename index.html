@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="icon" type="image" href="profile.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1 charset=UTF-8">
+<link rel="stylesheet" href="animation4.css">
+<style>
+html {
+	scroll-padding-top:50px;
+	scroll-behavior: smooth; }
+
+ul	{
+	background-image:url("bg2.jpg");
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	position:fixed;
+	top:0px;
+	width:100%;	}
+	
+	li {
+	float:right;
+	font-family:Bahnschrift SemiBold;}
+	
+	li a{
+	display:block;
+	color:#fff;
+	text-align:center;
+	padding:16px;
+	text-decoration:none; }
+	
+	li a:hover	{
+	color:#222222;
+	background-color:#fff;
+	border-bottom-style: solid;
+	border-bottom-color: #CD921E;
+	border-bottom-width: 5px; }
+	
+	li a:active	{
+	background-color:#CD921E;
+	color:#fff;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+	border-bottom-width: 5px;
+	}
+	
+	a:link {
+	text-decoration:none; }
+	
+	img {
+	position:fixed;
+	}
+
+.bio {
+padding-top:210px;
+color: #fff;
+padding-left:562px;
+padding-right:100px;
+font-size:1.3rem;
+font-family: Trebuchet MS; }
+
+#more{display: none;}
+
+button{
+margin-right:697px;
+float:right;
+background-color: #D3D3D3;
+margin-bottom:50px;}
+
+.read_more {
+font-family:Bahnschrift SemiBold;
+border: radius 0px;
+background-color:#fff;
+color: #222222;
+border:none;
+font-size:1.2em;
+padding:7px;}
+
+button:hover {
+color:#222222;
+background-color:#A9A9A9;
+}
+
+</style>
+</head>
+
+<body>
+<ul>
+	<li><a href="contact.html">CONTACT ME</a></li>
+	<li><a href="projects.html">PROJECTS</a></li>
+	<li><a href="services.html">SERVICES</a></li>
+	<li><a href="about.html">BLOG</a></li>
+	<li><a href="index.html">HOME</a></li>
+	</ul>
+
+<div class="container">
+  <p class="shadow">Hello 👋 I'm</p>
+  <section class="animation">
+    <div class="first"><div>VANSH SHARMA</div></div>
+    <div class="second"><div>Web Developer</div></div>
+    <div class="third"><div>System Engineer</div></div>
+  </section>
+  </div>
+
+<div> 
+<a target='_blank' href = 'toon.png'>
+<img src="toon.png" style = "padding-top:80px; margin-left:0; float:bottom;" title="Vansh Sharma">
+</a>
+</div>
+
+
+<div class="bio">
+  <p>
+I’ve been working on my portfolio for a long period, but now it’s time to show the world what I’ve got.<br>
+And that’s why I’ve created this website—so you can see my work so far and get a sense of who I am as a Developer.
+<br><br>
+I’m a jack-of-all-trades person—I know how to do everything from data analysis to content creation, but my favorite thing is web designing.<br>
+I love being able to take something that needs to be shared and make it come alive in a way that makes people want it
+.<span id="dots">....</span><span id="more">
+<br><br>
+I have always had a passion for web designing and development.<br> Still, it wasn’t until the junior year that I began to take it seriously.<br><br>
+In the past year or so, my skills have become more refined and polished.<br>
+I have been able to apply what I’ve learned to help me work more effectively and convey my ideas more clearly.
+<br><br>
+I’m excited to be able to share my work with you here.<br>
+If you have any questions, feel free to reach out to me.
+</p>
+</div>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+<button onclick="myFunction()" id="myBtn" class="read_more">Read more</button>
+
+</body>
+</html>
